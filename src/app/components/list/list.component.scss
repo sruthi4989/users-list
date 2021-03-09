@@ -1,0 +1,32 @@
+.auth-links {
+  float: right;
+  position: absolute;
+  right: 20px;
+}
+.home-font {
+  font-size: 30px;
+  color: #000;
+  position: relative;
+  bottom: 5px;
+}
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td,
+th {
+  border: 1px solid #000;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+.table-user-row:hover {
+  background: #dbe6ff;
+  cursor: pointer;
+}

@@ -1,0 +1,36 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-12" role="navigation">
+      <nav class="navbar navbar-expand-sm bg-light">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="javascript:void(0);" (click)="goToList()">
+              <i class="fa fa-home home-font" aria-hidden="true"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="javascript:void(0);" (click)="goToList()"
+              >List</a
+            >
+          </li>
+          <li class="nav-item auth-links">
+            <a
+              (click)="logout()"
+              class="nav-link"
+              href="javascript:void(0);"
+              *ngIf="authService.userLogged$ | async"
+              >Signout</a
+            >
+            <a
+              class="nav-link"
+              (click)="login()"
+              href="javascript:void(0);"
+              *ngIf="!(authService.userLogged$ | async)"
+              >Signin</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</div>
